@@ -18,10 +18,22 @@ a {
     color: #fff;
 }
 
+button {
+    border: none;
+    background-color: lightsalmon;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+}
+
 /* Set global icon size */
 img[src*="icons"] {
     width: 24px;
     height: 24px;
+}
+
+img[src*="avatar"] {
+    width: 50px;
+    height: 50px;
 }
 
 /* SIDEBAR */
@@ -81,6 +93,27 @@ img[src*="icons"] {
 /* MAIN -> HEADER*/
 #header {
     background-color: lightblue;
+    padding: 1.5rem;
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: 3fr 1fr;
+}
+
+.profile {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-self: end;
+}
+
+.greeting {
+    display: flex;
+    gap: 1rem;
+}
+
+.main-btns {
+    align-self: center;
+    justify-self: end;
 }
 
 /* MAIN -> CONTENT*/
