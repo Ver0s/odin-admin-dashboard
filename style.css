@@ -7,4 +7,23 @@
 body {
     font-family: Rubik, sans-serif;
     line-height: 1.5;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr;
+}
+
+#sidebar {
+    background-color: #1992D3;
+    display: flex;
+    grid-column: 1;
+}
+
+#header {
+    background-color: lightblue;
+    grid-column: 2;
+}
+
+#main {
+    background-color: lightcoral;
+    grid-column: 2;
 }
