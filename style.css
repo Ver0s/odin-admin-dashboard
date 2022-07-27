@@ -22,7 +22,9 @@ button {
     border: none;
     background-color: lightsalmon;
     border-radius: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    font: inherit;
 }
 
 /* Set global icon size */
@@ -93,10 +95,21 @@ img[src*="avatar"] {
 /* MAIN -> HEADER*/
 #header {
     background-color: lightblue;
-    padding: 1.5rem;
+    padding: 1rem 2rem;
     display: grid;
     row-gap: 1rem;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr auto;
+}
+
+.search-field {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-field input {
+    width: 300px;
+    padding: 0.3rem;
 }
 
 .profile {
@@ -108,7 +121,13 @@ img[src*="avatar"] {
 
 .greeting {
     display: flex;
+    align-items: center;
     gap: 1rem;
+}
+
+.greeting img[src*="avatar"] {
+    width: 72px;
+    height: 72px;
 }
 
 .main-btns {
@@ -116,5 +135,8 @@ img[src*="avatar"] {
     justify-self: end;
 }
 
+.main-btns button {
+    margin-left: 1rem;
+}
 /* MAIN -> CONTENT*/
 
