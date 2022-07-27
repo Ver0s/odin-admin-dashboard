@@ -1,3 +1,4 @@
+/* GENERAL */
 * {
     margin: 0;
     padding: 0;
@@ -12,18 +13,75 @@ body {
     grid-template-columns: 1fr 4fr;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Set global icon size */
+img[src*="icons"] {
+    width: 24px;
+    height: 24px;
+}
+
+/* SIDEBAR */
 #sidebar {
-    background-color: #1992D3;
-    display: flex;
+    background-color: #363740;
     grid-column: 1;
+    color: #fff;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
-#header {
-    background-color: lightblue;
-    grid-column: 2;
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
+.logo-box h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.nav {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.7rem 0;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.nav li:hover {
+    background-color: #3e4049;
+    border-radius: 0.5rem;
+    padding-left: 0.7rem;
+}
+
+.nav p {
+    font-weight: 500;
+}
+
+/* MAIN */
 #main {
     background-color: lightcoral;
-    grid-column: 2;
+    grid-column: 2 / 3;
 }
+
+/* MAIN -> HEADER*/
+#header {
+    background-color: lightblue;
+}
+
+/* MAIN -> CONTENT*/
+
