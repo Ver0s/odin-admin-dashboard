@@ -196,6 +196,7 @@ img[src*="avatar"] {
 /* MAIN -> CONTENT -> ANNOUNCEMENTS*/
 .announcements {
     grid-column: 2;
+    margin-bottom: 1rem;
 }
 
 .announcements-card-container {
