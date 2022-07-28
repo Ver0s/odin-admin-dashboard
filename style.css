@@ -10,7 +10,7 @@ body {
     line-height: 1.5;
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 20% 80%;
 }
 
 a {
@@ -47,6 +47,10 @@ img[src*="avatar"] {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 20%;
 }
 
 .logo-box {
@@ -138,5 +142,87 @@ img[src*="avatar"] {
 .main-btns button {
     margin-left: 1rem;
 }
-/* MAIN -> CONTENT*/
 
+/* MAIN -> CONTENT*/
+#content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 2rem;
+    column-gap: 2rem;
+}
+
+.content-title {
+    margin-bottom: 0.5rem;
+}
+
+/* MAIN -> CONTENT -> PROJECTS*/
+.projects-card-container {
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem
+}
+
+.project-card {
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.project-text {
+    margin-bottom: 1rem;
+}
+
+.project-icons {
+    text-align: right;
+}
+
+.project-icons img {
+    margin-left: 0.5rem;
+}
+
+.project-name {
+    font-weight: 700;
+}
+
+.project-desc {
+    font-weight: 400;
+}
+
+.project-card {
+    background-color: lightsalmon;
+}
+
+/* MAIN -> CONTENT -> ANNOUNCEMENTS*/
+.announcements {
+    grid-column: 2;
+}
+
+.announcements-card-container {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: beige;
+}
+
+.announcement:nth-child(1)::after,
+.announcement:nth-child(2)::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0.1rem;
+    background-color: gray;
+    margin: 0.5rem 0;
+}
+
+.announcement-desc,
+.announcement-name {
+    font-size: 0.9rem;
+}
+
+.announcement-name {
+    font-weight: 700;
+}
+
+/* MAIN -> CONTENT -> TRENDING*/
+.trending {
+    grid-column: 2;
+}
