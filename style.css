@@ -93,6 +93,7 @@ img[src*="avatar"] {
 /* MAIN */
 #main {
     background-color: lightcoral;
+    /* background-color: #F7F8FC; */
     grid-column: 2 / 3;
 }
 
